@@ -3,11 +3,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/picassowifi/picassowifiue-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/n2awifi/n2awifiue-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/picassowifi/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/n2awifi/overlay
 
-LOCAL_PATH := device/samsung/picassowifi
+LOCAL_PATH := device/samsung/n2awifi
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernAl
 else
@@ -20,7 +20,7 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, build/target/product/full.mk)
 
-PRODUCT_NAME := lineage_picassowifi
-PRODUCT_DEVICE := picassowifi
+PRODUCT_NAME := lineage_n2awifi
+PRODUCT_DEVICE := n2awifi
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := picassowifi
+PRODUCT_MODEL := n2awifi

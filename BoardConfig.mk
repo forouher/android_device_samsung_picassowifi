@@ -1,10 +1,10 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/samsung/picassowifi/BoardConfigVendor.mk
+-include vendor/samsung/n2awifi/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := picassowifi
+TARGET_BOOTLOADER_BOARD_NAME := n2awifi
 
 # Platform
 TARGET_BOARD_PLATFORM := smdk4x12
@@ -35,7 +35,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 
-#TARGET_PREBUILT_KERNEL := device/samsung/picassowifi/kernAl
+#TARGET_PREBUILT_KERNEL := device/samsung/n2awifi/kernAl
 TARGET_KERNEL_CONFIG := lineageos_deathly_n2awifi_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos5420
 KERNEL_TOOLCHAIN_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
@@ -82,4 +82,4 @@ TW_INCLUDE_L_CRYPTO := true
 #TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,noauto_da_alloc,discard,journal_async_commit,errors=panic"
 #TW_CRYPTO_FS_FLAGS := "0x00000406"
 #TW_CRYPTO_KEY_LOC := "footer"
-#BOARD_CUSTOM_BOOTIMG_MK := device/samsung/picassowifi/custombootimg.mk
+#BOARD_CUSTOM_BOOTIMG_MK := device/samsung/n2awifi/custombootimg.mk

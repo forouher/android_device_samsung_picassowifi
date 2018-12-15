@@ -1,3 +1,3 @@
-ifneq ($(filter picassowifi,$(TARGET_DEVICE)),)
+ifneq ($(filter n2awifi,$(TARGET_DEVICE)),)
     include $(all-subdir-makefiles)
 endif
