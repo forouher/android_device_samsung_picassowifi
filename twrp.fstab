@@ -9,3 +9,4 @@
 /efs3       emmc      	/dev/block/platform/dw_mmc.0/by-name/m9kefs2      flags=backup=1;subpartitionof=/efs1
 /efs4       emmc      	/dev/block/platform/dw_mmc.0/by-name/m9kefs3      flags=backup=1;subpartitionof=/efs1
 /radio		emmc		/dev/block/platform/dw_mmc.0/by-name/RADIO
+/misc	emmc		/dev/block/platform/dw_mmc.0/by-name/OTA
