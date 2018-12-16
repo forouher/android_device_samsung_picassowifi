@@ -36,7 +36,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 
 #TARGET_PREBUILT_KERNEL := device/samsung/n2awifi/kernAl
-TARGET_KERNEL_CONFIG := lineageos_deathly_n2awifi_defconfig
+TARGET_KERNEL_CONFIG := lineageos_n2awifi_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos5420
 KERNEL_TOOLCHAIN_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
 LZMA_RAMDISK_TARGETS := boot,recovery
